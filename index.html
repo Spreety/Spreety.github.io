@@ -1,23 +1,145 @@
----
-layout: default
----
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+<link href="https://fonts.googleapis.com/css?family=Reenie+Beanie|Satisfy|Della+Respira" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Sansita|Nunito+Sans" rel="stylesheet">
+<div class="container-fluid">
+<body background="https://www.dropbox.com/s/rpbqzhzfz2ov1hl/black-backgrounds-9.jpg?raw=1" bgproperties="fixed">
+<!--- Menu Bar --->
+    <div class="menu">
+       <ul class ="nav nav-pills">
+         <li>
+           <a class="active" href="#top">C. Melissa Epperson</a>
+         </li>
+         <li style="float:right">
+           <a class="active" href="#top">Home</a>
+         </li>
+         <li style="float:right">
+           <a class="active" href="#aboutMe">About Me</a>
+         </li>
+         <li style="float:right">
+           <a class="active" href="#portfolio">Portfolio</a>
+         </li>
+         <li style="float:right">
+           <a class="active" href="#contact">Contact</a>
+         </li>
+    </div>
+<!--- About Me --->
+    <div id="aboutMe">
+      <div class="row">
+        <div class="col-md-4">
+          <img id="picture" src="https://www.dropbox.com/s/ll44fh1lgh17hep/Me2017E.jpg?raw=1" alt="Headshot of Melissa Epperson"/>
+        </div>
+        <div class="col-md-8">
+          <h1 id="name">C. Melissa Epperson</h1>
+      <p> I originally started out with the goal of becoming a graphic designer. I learned  all that I could about Photoshop and Adobe Illustrator, and I even began designing some logos. I decided that it would be smart to learn the basics of web design so that I could become a better graphic artist. I started learning HTML and CSS. I had no idea that I would love it so much. After learning HTML and CSS, I wanted to learn more, so I moved on to learning JavaScript. My focus has now changed from graphic design to web design. I hope to eventually become a full-stack developer.</p>
+        </div>
+      </div id="skillSection">
+      <h1 id="skills">Skills</h1>
+    <div id="skillButtons">
+      <div class="col-md-2"><button id="ps" type="button" class="btn btn-info btn-lg">Adobe Photoshop</button></div>
+      <div class="col-md-2"><button id="ai" type="button" class="btn btn-info btn-lg">Adobe Illustrator</button></div>
+      <div class="col-md-2"><button id="ht" type="button" class="btn btn-info btn-lg">HTML5</button></div>
+      <div class="col-md-2"><button id="cs" type="button" class="btn btn-info btn-lg">CSS</button></div>
+      <div class="col-md-2"><button id="js" type="button" class="btn btn-info btn-lg">JavaScript</button></div>
+      <div class="col-md-2"><button id="jq" type="button" class="btn btn-info btn-lg">jQuery</button></div>
+      </div>
+      </div>
+  <div id="skillButtons2">
+    <div class="col-md-2"></div>
+    <div class="col-md-2"></div>
+   <div class="col-md-2"><button id="bs" type="button" class="btn btn-info btn-lg">Bootstrap</button></div>
+      <div class="col-md-2"><button id="sql" type="button" class="btn btn-info btn-lg">SQL</button> 
+      </div>
+    <div class="col-md-2"></div>
+    <div class="col-md-2"></div>
+      </div>
+  </div>
+      
+<!--- Portfolio --->
+  <div id="portfolio">
+      <h1>Graphic Design</h1>
+  </div>
+    <div id="graphicDesign">
+      <div class="row">
+        <div class="col-md-6">
+          <img class="thumbNails" src="https://www.dropbox.com/s/ny10py8zad1eg83/WasatchRacingLogoS.png?raw=1" alt= "Wasatch Racing logo">
+        </div>
+        <div class="col-md-6">
+          <img class="thumbNails" src="https://www.dropbox.com/s/1amsde0xxd2khzo/Kil%27n%20Time%20Logo.pdf?raw=1" alt="Kil'n Time Logo">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img class="thumbNails" src="https://www.dropbox.com/s/5oi2vw6odr08c05/EveryEventRentals.pdf?raw=1" alt="Every Event Rental Logo">
+        </div>
+        <div class="col-md-6">
+          <img class="thumbNails" src="https://www.dropbox.com/s/cw0cnm9lppowwnr/TrailMix10k.png?raw=1" alt="Trailmix 10k logo">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img class="thumbNails" src="https://www.dropbox.com/s/swr52cyyp13pdub/Halloween%20wallpaperSmall.png?raw=1" alt="Halloween wallpaper with cemetery and haunted house">
+        </div>
+        <div class="col-md-6">
+         <img class="thumbNails" src="https://www.dropbox.com/s/d09bqtvhu4k9kpm/MooseLane%20%5BRough%5D.png?raw=1" alt="Moose Lane Logo">
+        </div>
+      </div>
+  </div>
+   <div id="portfolio2">
+    <h1>Web Design</h1>
+  </div>
+    <div id="webDesign">
+      <div class="row">
+        <div class="col-md-6">
+          <a href="http://www.kilntimeceramic.com target="_blank"><img class="thumbNails" src="https://www.dropbox.com/s/5x0meh9c0hfh5pp/Screen%20Shot%202018-02-04%20at%2010.20.29%20AM.png?raw=1" alt="Kiln Time Website"></a>
+        </div>
+        <div class="col-md-6">
+          <a href="https://codepen.io/Spreety/full/OpVVGw/" target="_blank"><img class="thumbNails" src="https://www.dropbox.com/s/nqrztxv7hmty6gc/Screen%20Shot%202017-04-09%20at%2012.52.52%20PM.png?raw=1" alt="Random Quote Generator website thumbnail"></a>
+      </div>
+     </div>
+      <div class="row">
+        <div class="col-md-6">
+          <a href="https://codepen.io/Spreety/full/JOKxwL/" target="_blank"><img class="thumbNails" src="https://www.dropbox.com/s/aicvu0qsz63ahnj/Screen%20Shot%202018-02-03%20at%2010.41.54%20AM.png?raw=1" alt= "Wikipedia Viewer"></a>
+        </div>
+        <div class="col-md-6">
+          <a href="https://codepen.io/Spreety/full/oZKYVb/" target="_blank"><img class="thumbNails" src="https://www.dropbox.com/s/kazsujidsyurt47/Screen%20Shot%202018-02-03%20at%2010.50.42%20AM.png?raw=1" alt= "Weather App"></a>
+        </div>
+      </div>
+  </div>
+  </div>
+<!--- Contact --->
+    <div id="contact">
+      <h1>Contact Me</h1>
+  </div>
+  <div class="contactMe">
+       <div id="email">
+         <a href="mailto:someone@yoursite.com">melissa.epperson67@gmail.com</a>
+      </div>
+      <div class="weblinks">
+        <div class="row">
+          <div class="col-md-6"> 
+        <h1 id="findMe">You can also find me on:</h1>
+          </div>
+          <div class="col-md-6">
+            <a href="https://github.com/Spreety" target="_blank">
+              <i class="fa fa-github fa-3x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/c-melissa-epperson-77420a133" target="_blank">
+              <i class="fa fa-linkedin-square fa-3x"></i>
+            </a>
+            <a href="https://www.freecodecamp.com/spreety" target="_blank"> 
+              <i class="fa fa-free-code-camp fa-3x"></i>
+            </a>
+            <a href="https://www.facebook.com/melissa.boneepperson" target="_blank">
+              <i class="fa fa-facebook fa-3x"></i>
+            </a>
+          </div>
+        </div>
 </div>
+    </div>
+<!--- Footer --->
+     <div class="footer">
+       <p>Created by C. Melissa Epperson</p>
+       <p>&copy; C. Melissa Epperson, 2017</p> 
+     </div>
+  </div>
+</body>
